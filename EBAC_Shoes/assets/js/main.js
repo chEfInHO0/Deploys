@@ -36,8 +36,6 @@ $(document).ready(() => {
     })
 
     $('.cart').click(function ($this) {
-        console.log($this.target)
-        console.log($($this.target).siblings('p.size-list')[0])
         let a = $($this.target).siblings('p.size-list')[0]
         let btnCount = $(a).children().length
         for (let c = 0; c != btnCount; c++) {

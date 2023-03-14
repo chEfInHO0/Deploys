@@ -1,0 +1,154 @@
+body{
+    background-color: #1a1616;
+}
+
+h2,.card-footer{
+    color: #fff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+h4{
+    color: #fff;
+}
+.nav-link{
+    max-width: 100px;
+}
+
+.navbar .nav-link.active{
+    background-color: #fff;
+    padding: 8px;
+}
+
+.navbar .nav-link:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar .nav-link.active:hover{
+    background-color: #fff;
+    padding: 8px;
+}
+section{
+    padding-top: 180px;
+    padding-bottom: 90px;
+    padding-left: 10px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #fd7e14;
+}
+
+footer{
+    background-color: #fd7e14;
+    padding: 20px;
+}
+
+footer h4{
+    color: #020107;
+}
+
+form input[type=submit]{
+    background-color: #fd7e14;
+    color: #000;
+    border: #000;
+}
+
+form input[type=submit]:hover{
+    background-color: #fc7100;
+    color: #000;
+    border: #000;
+}
+
+.card-img-overlay{
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+    max-width: 400px;
+    max-height:450px;
+}
+
+.card{
+    
+    width: 350px;
+    height: 400px;
+}
+
+.card-footer{
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.card img{
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+}
+
+.card p{
+    max-height: 100px;
+    overflow-y: hidden;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+}
+
+.end{
+    justify-content: end;
+}
+
+.social-links li{
+    list-style-type: none;
+    display: inline;
+    padding: 16px;
+}
+
+ i {
+    color: #000;
+    font-size: 36px;
+}
+
+.form-control{
+    background-color: #ccc !important;
+    border: 1px solid rgba(0,0,0,0.7) !important;
+}
+
+
+.btn-netflix{
+    background-color: #dc3545;
+}
+
+.btn-netflix:hover{
+    background-color: #97202c;
+}
+
+.btn-hbo{
+    background-color: #18052a;
+    color: #fff;
+}
+
+.btn-hbo:hover{
+    background-color: #020107;
+    color: #fff;
+}
+
+.btn-crunch{
+    background-color: #22252a;
+    color: #f47521 ;
+}
+
+.btn-crunch:hover{
+    background-color: #22252a;
+    color: #e3e4e4;
+}
+
+.card button {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.card button:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+}

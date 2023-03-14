@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-2">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Abrir
+            Modal 1</button>
+        <div class="modal" id="exemplo-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Header da Modal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>
+                            Este modal pode ser fechado clicando fora dele
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nam eveniet maxime
+                            suscipit, perspiciatis recusandae atque quisquam omnis nulla vitae quo quas provident non
+                            odio quae iste voluptate optio incidunt.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <h5>
+                            Footer da Modal
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemplo-modal2">Abrir
+            Modal 2</button>
+        <div class="modal" id="exemplo-modal2" data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Header da Modal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>
+                            Este modal somente pode ser fechado por um dos botoes
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nam eveniet maxime
+                            suscipit, perspiciatis recusandae atque quisquam omnis nulla vitae quo quas provident non
+                            odio quae iste voluptate optio incidunt.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <h5>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Confirmar</button>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

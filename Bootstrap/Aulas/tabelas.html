@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <p class="justify-content-center text-center">
+        <h3>Use um dos botões para ver o modelo da tabela</h3>
+        <button>table-light</button>
+        <button>table-dark</button>
+        <button>table-primary</button>
+        <button>table-secondary</button>
+        <button>table-success</button>
+        <button>table-danger</button>
+        <button>table-warning</button>
+        <button>table-info</button>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Teste 1</th>
+                    <th>Teste 2</th>
+                    <th>Teste 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Valor 1</td>
+                    <td>Valor 2</td>
+                    <td>Valor 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('button').click(function ($this) {
+                let classes = $('table')[0].classList.value
+                classes = classes.split(',')
+                $('table').removeClass(classes[0])
+                $('table').removeClass(classes[1])
+                $('table').addClass('table')
+                $('table').addClass(`${$($this.target).html()}`)
+            })
+        })
+    </script>
+
+</body>
+
+</html>

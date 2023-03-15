@@ -28,15 +28,11 @@ h4{
     padding: 8px;
 }
 section{
-    padding: 16px;
+    padding: 32px 16px;
     margin-bottom: 32px;
 }
 
 header{
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
     background-color: #fd7e14;
 }
 
@@ -49,16 +45,35 @@ footer h4{
     color: #020107;
 }
 
-form input[type=submit]{
+form button[type=submit]{
+    padding: 9px;
+    border-radius: 5px;
     background-color: #fd7e14;
     color: #000;
     border: #000;
 }
 
-form input[type=submit]:hover{
+form button[type=submit]:hover{
     background-color: #fc7100;
     color: #000;
     border: #000;
+}
+
+form button[type=submit]:focus{
+    background-color: #a14900;
+    color: #000;
+    border: #000;
+}
+
+.error {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 5px;
+    color: red;
+    font-weight: bold;
+    background-color: rgb(245, 154, 154);
 }
 
 .card-img-overlay{
@@ -98,15 +113,13 @@ form input[type=submit]:hover{
     justify-content: end;
 }
 
-.social-links li{
-    list-style-type: none;
-    display: inline;
-    padding: 16px;
+.social-links a{
+    padding: 5px;
 }
 
  i {
     color: #000;
-    font-size: 36px;
+    font-size: 24px;
 }
 
 .form-control{

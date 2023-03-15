@@ -295,7 +295,7 @@
                     </div>
                 </div>
                 <div class="row g-0">
-                    <div class="col-sm mt-2 col-md-8 col-lg-6 ">
+                    <div class="col-sm mt-2 col-md-8 col-lg-5 mx-auto ">
                         <form class="form-control">
                             <label for="nome" class="form-label mt-2 mb-2">Nome</label>
                             <input id="nome" name="nome" class="form-control shadow-none" type="text">
@@ -308,7 +308,68 @@
                             <br><button type="submit" class="btn-custom mt-4">Enviar</button>
                         </form>
                     </div>
+                    <div class="col-6 carousel-area d-flex align-items-center">
+                        <div class="container-fluid ">
+                            <div id="ppt" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div data-bs-interval="3000" class="carousel-item active">
+                                        <img class="carousel-cover"
+                                            src="https://cdn.wallpapersafari.com/98/42/ExDPRO.jpg" alt="">
+                                        <div class="carousel-caption">
+                                            <h2 class="comment">Achava que era só sobre um pirata que estica, 10/10
+                                            </h2>
+                                            <h6 class="comment">
+                                                One Piece
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div data-bs-interval="3000" class="carousel-item">
+                                        <img class="carousel-cover " src="https://wallpaperaccess.com/full/781822.jpg"
+                                            alt="">
+                                        <div class="carousel-caption ">
+                                            <h2 class="comment">"Say My Name", 1000/10</h2>
+                                            <h6 class="comment">
+                                                Breaking Bad
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div data-bs-interval="3000" class="carousel-item">
+                                        <img class="carousel-cover "
+                                            src="https://wallpapers.com/images/hd/the-peaky-blinders-shelby-family-yzbar888h96t7ekn.jpg"
+                                            alt="">
+                                        <div class="carousel-caption">
+                                            <h2 class="comment">Don't **** with the Peaky Blinders, 9/10</h2>
+                                            <h6 class="comment">
+                                                Peaky Blinders
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <button data-bs-target="#ppt" data-bs-slide="prev" class="carousel-control-prev"
+                                        type="button">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button data-bs-target="#ppt" data-bs-slide="next" class="carousel-control-next"
+                                        type="button">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#ppt" class="active" data-bs-slide-to="0">
+
+                                        </button>
+                                        <button type="button" data-bs-target="#ppt" data-bs-slide-to="1">
+
+                                        </button>
+                                        <button type="button" data-bs-target="#ppt" data-bs-slide-to="2">
+
+                                        </button>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </section>
         </div>
         <div class="modal" id="filme-post-1">
@@ -565,9 +626,10 @@
             </div>
         </footer>
         <div id="toaster" class="toast-container position-fixed bottom-0 end-0 p-3">
-            
+
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/lib/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery-3.6.3.min.js"></script>
     <script src="./assets/js/jquery.mask.min.js"></script>

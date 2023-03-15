@@ -84,9 +84,10 @@ form button[type=submit]:focus{
 }
 
 .card{
-    
+    margin: 0 auto;
     width: 350px;
     height: 400px;
+    margin-top: 60px;
 }
 
 .card-footer{

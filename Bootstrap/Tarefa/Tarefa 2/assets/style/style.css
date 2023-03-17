@@ -202,3 +202,21 @@ form, .carousel-areaf{
     color: #fff;
     font-style: italic;
 }
+
+.return-home{
+    width: 36px;
+    height: 36px;
+    background-color: #f47521;
+    border: 1px solid;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: 0.1s all linear;
+}
+
+.return-home:hover{
+    background-color: #ac4500;
+    border: 18px solid;
+}

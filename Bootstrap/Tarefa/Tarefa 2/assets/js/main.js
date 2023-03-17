@@ -13,6 +13,15 @@ function resetToasts() {
     }, 5000);
 }
 
+function showHomeBtn(){
+    if ($(window).scrollTop() > '300'){
+        $('.return-home').removeClass('d-none') 
+    }else{
+        $('.return-home').addClass('d-none')
+         
+    }
+}
+
 function setErrorMessage(msg) {
     return `
             <div class="toast" id="failed-toast">
@@ -52,8 +61,13 @@ function setSuccessToast(msg) {
 }
 
 $(document).ready(() => {
+    setInterval(()=>{
+        showHomeBtn()
+    },150)
+    $('.return-home').click(function (){
+        $("html, body").animate({scrollTop: 0}, 100);
+    })
     $(formBtn).click(function () {
-        console.log('teste')
         $('form').submit()
     })
     $('#Asec1').click(function () {

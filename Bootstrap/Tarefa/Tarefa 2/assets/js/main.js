@@ -1,19 +1,6 @@
-const errorCode = {
-    nome: '#custom-toast-1',
-    email: '#custom-toast-2',
-    fsa: '#custom-toast-3',
-    desc: '#custom-toast-4'
-}
-
 const toaster = document.querySelector('#toaster')
-
-const secFilmes = $('#sec1')
-const secSeries = $('#sec2')
-const secAnimes = $('#sec3')
-const secContato = $('#sec4')
-
+const formBtn = document.querySelector('#submiter')
 let nav = document.querySelector('#nav-toggle')
-
 
 function raiseToast(id) {
     const toast = new bootstrap.Toast(id)
@@ -23,7 +10,7 @@ function raiseToast(id) {
 function resetToasts() {
     setTimeout(() => {
         $(toaster).html('')
-    }, 6000);
+    }, 5000);
 }
 
 function setErrorMessage(msg) {
@@ -65,6 +52,10 @@ function setSuccessToast(msg) {
 }
 
 $(document).ready(() => {
+    $(formBtn).click(function () {
+        console.log('teste')
+        $('form').submit()
+    })
     $('#Asec1').click(function () {
         $("#sec1").get(0).scrollIntoView({behavior: 'smooth'});
     })
@@ -99,16 +90,19 @@ $(document).ready(() => {
                 nome: 'Nome inválido',
                 email: 'E-mail inválido',
                 fsa: 'Título inválido',
-                desc: 'Descrição inválida'
-
+                desc: 'Descrição inválida (minimo de 150 caracteres)'
             },
             submitHandler: (function (form) {
                 if (($('#nome').val()).split(' ').length < 2) {
                     setErrorToast(`Os seguintes campos necessitam de correção: \n <strong>insira um sobrenome no campo do nome</strong>`)
-                } else {
-                    form.submit()
+                } else if($('#desc').val().split('').length < 150) {
+                    setErrorToast(`Os seguintes campos necessitam de correção: \n <strong>descrição necessita de pelo menos 150 caracteres</strong>`)
+                }else{
+                    setSuccessToast(`Em breve estaremos retornando o contato através do seu e-mail \n <strong> ${$('#email').val()} </strong>`)
+                    setTimeout(()=>{
+                        form.submit()
+                    },4000)
                 }
-
             }),
             invalidHandler: (function (e, validate) {
                 e.preventDefault()
@@ -124,7 +118,6 @@ $(document).ready(() => {
                     } else if (err.element.name == 'desc') {
                         er += 'Descrição'
                     }
-
                 });
                 setErrorToast(`Os seguintes campos necessitam de correção: \n <strong> ${er} </strong>`)
             })

@@ -10,8 +10,15 @@ h2,.card-footer{
 h4{
     color: #fff;
 }
+
+textarea{
+    resize: none;
+    height: 150px;
+}
+
 .nav-link{
     max-width: 100px;
+    cursor: pointer;
 }
 
 .navbar .nav-link.active{

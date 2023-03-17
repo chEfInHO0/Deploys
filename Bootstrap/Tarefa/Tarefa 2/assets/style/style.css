@@ -204,6 +204,7 @@ form, .carousel-areaf{
 }
 
 .return-home{
+    z-index: 20;
     width: 36px;
     height: 36px;
     background-color: #f47521;
